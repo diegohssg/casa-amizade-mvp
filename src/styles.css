@@ -1,0 +1,28 @@
+:root{--verde:#164E46;--texto:#172B3A;--cinza:#425466;--borda:#536777;--fundo:#F3F6F8;--erro:#9A1B1B;--ok-bg:#E7F4EC;--ok-borda:#1E7A46;--ok-txt:#14532D}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--fundo);color:var(--texto)}
+button,input,select,textarea{font-family:inherit;font-size:17px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #0B5FFF;outline-offset:2px}
+.cabecalho{background:var(--verde);color:#fff;padding:18px 24px}
+.cabecalho h1{font-size:22px;margin:0 0 4px}
+.cabecalho p{margin:0;font-size:15px}
+main{max-width:390px;margin:0 auto;padding:20px 24px 28px}
+.btn{display:block;width:100%;min-height:48px;border-radius:9px;font-size:17px;font-weight:bold;cursor:pointer;margin-bottom:12px}
+.btn-primario{background:var(--verde);color:#fff;border:none}
+.btn-primario[disabled]{background:#6B8F87;cursor:wait}
+.btn-secundario{background:#fff;color:var(--texto);border:1.5px solid var(--borda)}
+.btn-sair{background:#fff;color:var(--verde);border:none;border-radius:8px;min-width:70px;min-height:44px;font-weight:bold;float:right;cursor:pointer}
+label{display:block;font-weight:bold;margin:16px 0 8px}
+.obrigatorio{color:var(--erro)}
+.dica{display:block;font-weight:normal;font-size:13.5px;color:var(--cinza)}
+input,select,textarea{width:100%;min-height:52px;border:1.5px solid var(--borda);border-radius:8px;padding:10px 14px;background:#fff}
+textarea{min-height:110px}
+input[aria-invalid="true"],select[aria-invalid="true"]{border-color:var(--erro)}
+.erro-campo{display:block;color:var(--erro);font-weight:bold;font-size:14px;margin-top:6px}
+.cartao{background:#fff;border:1px solid #A5B1BA;border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.tag{font-size:13px;font-weight:bold;border-radius:20px;padding:4px 10px;border:1.5px solid}
+.tag-ok{color:var(--ok-txt);border-color:var(--ok-borda);background:var(--ok-bg)}
+.alerta-sucesso{display:flex;gap:10px;align-items:center;background:var(--ok-bg);border:1.5px solid var(--ok-borda);border-radius:10px;padding:14px 16px;font-weight:bold;color:var(--ok-txt);margin-bottom:18px}
+.resultado{font-size:15px;color:var(--cinza);margin:20px 0 8px}
+footer{text-align:center;font-size:14px;color:var(--cinza);padding:10px 0 26px}
+@media (max-width:320px){main{padding:16px}}
